@@ -12,8 +12,7 @@ html {
 }
 
 body {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 8%, rgba(117, 117, 117, 1) 100%);
+color: #333333;
 }
 
 .main__header {
@@ -38,18 +37,16 @@ body {
 
   &__paragraph {
     color: #f4f0f4;
-
-
-    &__paragraph--js {
-      color: #f4f0f4;
-
-
-      &__--link {
-        color: #f4f0f4;
-      }
-    }
   }
 }
+
+.about__header {
+  &__--js {
+    color: white;
+
+  }
+}
+
 
 
 
@@ -63,22 +60,40 @@ body {
     color: hsl(216, 72%, 17%);
     display: block;
     margin-right: 0px 0px 20px;
-
-    &__--open {
-      display: block;
-    }
   }
 }
 
-.hamburger {
-  position: absolute;
-  top: 16px;
-  right: 70px;
+.navigation--open {
+  display: block;
 }
 
 
+.hamburger--js {
+  position: absolute;
+  top: 16px;
+  right: 70px;
+
+}
+
+.time--js {
+  color: greenyellow;
+}
+
+:root {
+  --background-color:#f4f0f4;
+  --text-color:#333333;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+
+
+
 @media (min-width: 768px) {
-  .hamburger {
+  .hamburger--js {
     display: none;
   }
 
